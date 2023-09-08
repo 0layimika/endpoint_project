@@ -12,7 +12,7 @@ def endpoint(request):
          "Current_day":f"{current_date.strftime('%A')}",
          "utc_time":f"{current_time}",
          "track":"backend",
-         "gitbub_file_url":"",
-         "github_repo":"",
+         "gitbub_file_url":"https://github.com/0layimika/endpoint_project/tree/main/endpoint",
+         "github_repo":"https://github.com/0layimika/endpoint_project",
          "status_code":200}
  return JsonResponse(data)
