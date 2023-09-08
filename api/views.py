@@ -7,7 +7,7 @@ def endpoint(request):
  track = request.GET.get('track', 'Backend')
  current_date=datetime.now()
  current_time=current_date.strftime('%H:%M:%S')
- data = {'message':'This is my endpoint',
+ data = {'message':'This is my api',
          "Slack_name":slack_name,
          "Current_day":f"{current_date.strftime('%A')}",
          "utc_time":f"{current_time}",
