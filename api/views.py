@@ -9,7 +9,7 @@ def endpoint(request):
  data = {'message':'This is my api',
          "slack_name":slack_name,
          "current_day":f"{current_date.strftime('%A')}",
-         "utc_time":f"{current_date.isoformat()}",
+         "utc_time":f"{current_date.strftime('%Y-%m-%dT%H:%M:%SZ')}",
          "track":track,
          "github_file_url":"https://github.com/0layimika/endpoint_project/tree/main/endpoint",
          "github_repo_url":"https://github.com/0layimika/endpoint_project",
