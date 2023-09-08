@@ -8,10 +8,10 @@ def endpoint(request):
  current_date=datetime.now()
  current_time=current_date.strftime('%H:%M:%S')
  data = {'message':'This is my endpoint',
-         "Slack_name":"Olayimika Kayode",
+         "Slack_name":slack_name,
          "Current_day":f"{current_date.strftime('%A')}",
          "utc_time":f"{current_time}",
-         "track":"backend",
+         "track":track,
          "gitbub_file_url":"https://github.com/0layimika/endpoint_project/tree/main/endpoint",
          "github_repo":"https://github.com/0layimika/endpoint_project",
          "status_code":200}
